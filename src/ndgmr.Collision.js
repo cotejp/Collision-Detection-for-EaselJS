@@ -73,7 +73,7 @@ this.ndgmr = this.ndgmr || {};
     //}
 
     intersection = checkRectCollision(bitmap1,bitmap2);
-    if ( !intersection ) {
+    if ( !intersection || intersection.width < 1 || intersection.height < 1) {
       return false;
     }
 
